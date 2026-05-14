@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "dependencies": {
+    "@cap-js/hana": "^2",
     "@sap/cds": "^9",
-    "express": "^4",
-    "@sap/xssec": "^4"
+    "@sap/xssec": "^4",
+    "express": "^4"
   },
   "devDependencies": {
     "@cap-js/cds-test": "^0.4.1",
@@ -30,7 +31,7 @@
         "auth": {
           "kind": "mocked",
           "users": {
-            "alice": {
+            "sajnani12@gmail.com": {
               "roles": [
                 "support"
               ]
@@ -44,7 +45,8 @@
         }
       },
       "[production]": {
-        "auth": "xsuaa"
+        "auth": "xsuaa",
+        "db": "hana"
       },
       "destinations": true,
       "html5-repo": true,
