@@ -25,6 +25,7 @@
         }
       }
     },
+    
     "crossNavigation": {
       "inbounds": {
         "incidents-display": {
